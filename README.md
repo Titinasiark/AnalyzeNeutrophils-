@@ -1,5 +1,5 @@
 ## AnalyzeNeutrophils_PCT
-![doi](../master/fig_outputRplotNeutrophils_PCT.svg?sanitize=true)
+
 ### Single and multiple regressions, and scatterplots for clinical bloodwork and gene expression data.
 ([AnalyzeNeutrophils.R](../master/AnalyzeNeutrophils.R)) will allow you to load a comma-delimited .csv with various datapoints, perform single and multiple regressions of Body Mass Index (BMI) vs. variables from the Complete Blood Count with Differential (CBC-D) results, and produce 2-D and 3-D scatterplots for the results. 
 
@@ -23,7 +23,7 @@ ggplot(df, aes(x=BMI, y=Neutrophil_PCT)) +
   geom_point() +    
   geom_smooth(method=lm) 
 ```
-![BMI_Cortisol](../master/Images/CORTxBMI.png?sanitize=true)
+![Neutrophils_PCT](../master/fig_output/RplotNeutrophils_PCT.svg?sanitize=true)
 ##
 ### Results of single regression, BMI x C-Reactive Protein (CRP)
 ```
