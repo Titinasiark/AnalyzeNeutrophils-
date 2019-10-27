@@ -25,21 +25,25 @@ ggplot(df, aes(x=BMI, y=Neutrophil_PCT)) +
 ```
 ![Neutrophils_PCT](../master/fig_output/RplotNeutrophils_PCT.png?sanitize=true)
 ##
-### Results of single regression, BMI x C-Reactive Protein (CRP)
+### Results of single regression, BMI x Neutrophils
 ```
-> single.regression <- lm(BMI ~ CRP, data=IBS1)
-> print(single.regression)
+> library("ggplot2")
 
-Call:
-lm(formula = BMI ~ SerumCortisol + CRP, data = IBS1)
+setwd('C:/Users/tihet/Downloads/AnalyzeNeutrophils--master/AnalyzeNeutrophils--master/data/')
+data <- read.csv('RobinsonEtAl_Sup1.csv')
+df<-na.omit(data)
 
-Coefficients:
-  (Intercept)  SerumCortisol            CRP  
-      30.7936        -0.5231         0.6042  
+#BMI, Neutrophils
+
+single.regression <- lm(BMI ~ Neutrophils, data=data)
+print(single.regression)
+ggplot(df, aes(x=BMI, y=Neutrophils)) +
+  geom_point() +    
+  geom_smooth(method=lm)  
 
 ```
 
-![BMI_CRP](../master/Images/BMIxCRP.png?sanitize=true)
+![Neutrophils_PCT](../master/fig_output/RplotNeutrophils.png?sanitize=true)
 ##
 ##
 ### Results of multiple regression, BMI x Serum Cortisol + C-Reactive Protein (CRP)
