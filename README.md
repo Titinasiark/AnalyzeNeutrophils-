@@ -23,7 +23,7 @@ ggplot(df, aes(x=BMI, y=Neutrophil_PCT)) +
   geom_point() +    
   geom_smooth(method=lm) 
 ```
-![Neutrophils_PCT](../master/fig_output/RplotNeutrophils_PCT.svg?sanitize=true)
+![Neutrophils_PCT](../master/fig_output/RplotNeutrophils_PCT.PNG?sanitize=true)
 ##
 ### Results of single regression, BMI x C-Reactive Protein (CRP)
 ```
