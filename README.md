@@ -43,7 +43,7 @@ ggplot(df, aes(x=BMI, y=Neutrophils)) +
 
 ```
 
-![Neutrophils_PCT](../master/fig_output/RplotNeutrophils.png?sanitize=true)
+![Neutrophils](../master/fig_output/RplotNeutrophils.png?sanitize=true)
 ##
 ##
 ### Results of multiple regression, BMI x Neutrophils_PCT + Neutrophils
@@ -84,5 +84,5 @@ s3d(df) <- scatterplot3d(df$BMI, df$Neutrophil_PCT, df$Neutrophils,  pch=16, col
 fit <- lm(BMI ~ Neutrophil_PCT + Neutrophils, data=df)
 s3d$plane3d(fit)
 ```
-![BMI_Cortisol_CRP_3d-scatterplot](../master/Images/MultipleRegression_3way.png?sanitize=true)
+![BMI_Neutrophils_PCT_Neutrophils3d-scatterplot](../master/fig_output/Rplot BMI x Neutrophils_PCT + Neutrophils.png?sanitize=true)
 ##
