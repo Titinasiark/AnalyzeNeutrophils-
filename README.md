@@ -84,5 +84,5 @@ s3d(df) <- scatterplot3d(df$BMI, df$Neutrophil_PCT, df$Neutrophils,  pch=16, col
 fit <- lm(BMI ~ Neutrophil_PCT + Neutrophils, data=df)
 s3d$plane3d(fit)
 ```
-![BMI_Neutrophils_PCT_Neutrophils3d-scatterplot](../master/fig_output/Rplot BMI_Neutrophils_CT_Neutrophils.png?sanitize=true)
+![BMI_Neutrophils_PCT_Neutrophils3d-scatterplot](../master/fig_output/Rplot_BMI_Neutrophils_CT_Neutrophils.png?sanitize=true)
 ##
