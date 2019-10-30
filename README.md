@@ -1,4 +1,4 @@
-## AnalyzeNeutrophils_PCT
+## AnalyzeNeutrophils
 
 ### Single and multiple regressions, and scatterplots for clinical bloodwork and gene expression data.
 ([AnalyzeNeutrophils.R](../master/AnalyzeNeutrophils.R)) will allow you to load a comma-delimited .csv with various datapoints, perform single and multiple regressions of Body Mass Index (BMI) vs. variables from the Complete Blood Count with Differential (CBC-D) results, and produce 2-D and 3-D scatterplots for the results. 
