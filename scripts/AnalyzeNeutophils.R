@@ -25,3 +25,17 @@ print(single.regression)
 ggplot(df, aes(x=BMI, y=Neutrophils)) +
   geom_point() +    
   geom_smooth(method=lm)
+
+##  Single Regressions for BMI vs. Neutrophils_PCT
+##  Data was obtained from Robinson, et al. 2019 (doi: https://doi.org/10.1101/608208)
+##  https://statquest.org/2017/10/30/statquest-multiple-regression-in-r/
+##  http://www.sthda.com/english/articles/40-regression-analysis/167-simple-linear-regression-in-r/
+##  http://r-statistics.co/Linear-Regression.html
+## Read data
+
+#BMI, Neutrophil_PCT
+single.regression <- lm(BMI ~ Neutrophil_PCT, data=data)
+print(single.regression)
+ggplot(df, aes(x=BMI, y=Neutrophil_PCT)) +
+  geom_point() +    
+  geom_smooth(method=lm)
