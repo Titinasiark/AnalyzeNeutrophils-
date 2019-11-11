@@ -17,7 +17,7 @@ Robinson, JM. et al. 2019. Complete blood count with differential: An effective 
 ```
 ## Install necessary packages
 library(ggplot2)
-
+```
 ## Read data
 IBS <- read.csv("data/RobinsonEtAl_Sup1.csv", header = TRUE)
 head(IBS)
