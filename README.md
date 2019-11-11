@@ -22,24 +22,24 @@ library(ggplot2)
 IBS <- read.csv("data/RobinsonEtAl_Sup1.csv", header = TRUE)
 head(IBS)
 write.csv(IBS, "data_output/Neutrophils.csv")
-
+```
 ##  Single Regressions 
 ##  Data obtained from Robinson, et al. 2019 (doi: https://doi.org/10.1101/608208)
 ##  https://statquest.org/2017/10/30/statquest-multiple-regression-in-r/
 ##  http://www.sthda.com/english/articles/40-regression-analysis/167-simple-linear-regression-in-r/
 ##  http://r-statistics.co/Linear-Regression.html
 
-## Single Regression Test, BMI vs. Neutrophils
+### Single Regression Test, BMI vs. Neutrophils
 Neutrophils.regression <- lm(BMI ~ Neutrophils, data = IBS)
 summary(Neutrophils.regression)
 
-## Output the results to a file
+### Output the results to a file
 ## http://www.cookbook-r.com/Data_input_and_output/Writing_text_and_output_from_analyses_to_a_file/
 sink('data_output/Neutrophils_regression.txt', append = TRUE)
 print(Neutrophils.regression)
 sink()
 df<-na.omit(data)
-
+```
 
 ## ANOVA: IBS-subtype vs. Neutrophils
 ## http://www.sthda.com/english/wiki/one-way-anova-test-in-r
@@ -48,11 +48,11 @@ summary(Neutrophils.aov)
 sink('data_output/Neutrophils_anova.txt', append = TRUE)
 print(Neutrophils.aov)
 sink()
-
-## Print scatterplot and box plots as .png files into "fig_output" project directory.
-## http://www.sthda.com/english/wiki/ggsave-save-a-ggplot-r-software-and-data-visualization
 ```
 ### Scatterplots
+## Print scatterplot and box plots as .png files into "fig_output" project directory.
+## http://www.sthda.com/english/wiki/ggsave-save-a-ggplot-r-software-and-data-visualization
+
 https://www.statmethods.net/graphs/scatterplot.html
 
 ggplot(IBS, aes(x = BMI, y = Neutrophils)) +
@@ -65,7 +65,8 @@ dev.off()
 
 Neutrophils_scatterplot <- ggplot(IBS, aes(x = BMI, y = Neutrophils)) +
   geom_point(na.rm=TRUE) +    
-  geom_smooth(method = lm,na.rm=TRUE) 
+  geom_smooth(method = lm,na.rm=TRUE)
+  
 ```
 ![Neutrophils_PCT](../master/fig_output/RplotNeutrophils_PCT.png?sanitize=true)
 ##
