@@ -1,0 +1,8 @@
+
+Call:
+lm(formula = BMI ~ Neutrophils, data = IBS)
+
+Coefficients:
+(Intercept)  Neutrophils  
+    26.0794       0.1945  
+

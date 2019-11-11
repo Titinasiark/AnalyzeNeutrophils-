@@ -1,0 +1,11 @@
+Call:
+   aov(formula = Neutrophils ~ IBS.subtype, data = IBS)
+
+Terms:
+                IBS.subtype Residuals
+Sum of Squares      1.21538 289.62264
+Deg. of Freedom           1       108
+
+Residual standard error: 1.637587
+Estimated effects may be unbalanced
+1 observation deleted due to missingness
