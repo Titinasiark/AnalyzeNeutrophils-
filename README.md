@@ -15,12 +15,15 @@ Robinson, JM. et al. 2019. Complete blood count with differential: An effective 
 ## Install necessary packages
 ```
 install.packages("ggplot2")
+
 library(ggplot2)
 ```
 ##### Read data
 ```
 IBS <- read.csv("data/RobinsonEtAl_Sup1.csv", header = TRUE)
+
 head(IBS)
+
 write.csv(IBS, "data_output/Neutrophils.csv")
 ```
 ######  Single Regressions 
@@ -31,7 +34,9 @@ write.csv(IBS, "data_output/Neutrophils.csv")
 
 ##### Single Regression Test, BMI vs. Neutrophils
 ```
+
 Neutrophils.regression <- lm(BMI ~ Neutrophils, data = IBS)
+
 summary(Neutrophils.regression)
 ```
 
@@ -39,8 +44,11 @@ summary(Neutrophils.regression)
 ###### Data obtained from doi: http://www.cookbook-r.com/Data_input_and_output/Writing_text_and_output_from_analyses_to_a_file/
 ```
 sink('data_output/Neutrophils_regression.txt', append = TRUE)
+
 print(Neutrophils.regression)
+
 sink()
+
 df<-na.omit(data)
 ```
 
@@ -48,9 +56,13 @@ df<-na.omit(data)
 ###### Data obtained from doi: http://www.sthda.com/english/wiki/one-way-anova-test-in-r
 ```
 Neutrophils.aov <- aov(Neutrophils ~ IBS.subtype, data = IBS)
+
 summary(Neutrophils.aov)
+
 sink('data_output/Neutrophils_anova.txt', append = TRUE)
+
 print(Neutrophils.aov)
+
 sink()
 ```
 ##### Scatterplots
@@ -64,12 +76,16 @@ ggplot(IBS, aes(x = BMI, y = Neutrophils)) +
   geom_smooth(method = lm,na.rm=TRUE)
 
  https://www.stat.berkeley.edu/~s133/saving.html
+
 dev.copy(png,"fig_output/Neutrophils_scatterplot.png")
+
 dev.off()
 
 Neutrophils_scatterplot <- ggplot(IBS, aes(x = BMI, y = Neutrophils)) +
-  geom_point(na.rm=TRUE) +    
-  geom_smooth(method = lm,na.rm=TRUE)
+
+geom_point(na.rm=TRUE) +    
+
+geom_smooth(method = lm,na.rm=TRUE)
   
 ```
 ![Neutrophils_PCT](../master/fig_output/RplotNeutrophils_PCT.png?sanitize=true)
@@ -80,13 +96,16 @@ Neutrophils_scatterplot <- ggplot(IBS, aes(x = BMI, y = Neutrophils)) +
  https://tomizonor.wordpress.com/2013/04/18/color-boxplot/
  ```
 c1 <- rainbow(10)
+
 c2 <- rainbow(10, alpha=0.2)
+
 c3 <- rainbow(10, v=0.7)
 
 boxplot(Neutrophils ~ IBS.subtype, data = IBS, main="Neutrophils by IBS subtype", 
                        xlab = "IBS.subtype", ylab = "Neutrophils", col=c2, medcol=c3, whiskcol=c1, staplecol=c3, boxcol=c3, outcol=c3, pch=23, cex=2)
 
 dev.copy(png,"fig_output/Neutrophils_boxplot.png")
+
 dev.off()
 ```
 ##### Assign "HIGH", "NORMAL", or "LOW" based on clinical range to the Neutrophils_result parameter
@@ -101,6 +120,7 @@ IBS$Neutrophils_result[IBS$Neutrophils > 7.0] <- "HIGH"
 IBS$Neutrophils_result[IBS$Neutrophils <= 7.0 & IBS$Neutrophils >= 1.6] <- "NORMAL"
 
 IBS$Neutrophils_result[IBS$Neutrophils < 1.6] <- "LOW"
+
 write.csv(IBS, "data_output/Neutrophils.csv")
 ```
 
