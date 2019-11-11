@@ -108,6 +108,8 @@ dev.copy(png,"fig_output/Neutrophils_boxplot.png")
 
 dev.off()
 ```
+![Neutrophils_PCT](fig_output/Neutrophils_boxplot.png
+##
 ##### Assign "HIGH", "NORMAL", or "LOW" based on clinical range to the Neutrophils_result parameter
 ```
 IBS <- read.csv("data/RobinsonEtAl_Sup1.csv", header = TRUE)
@@ -123,6 +125,6 @@ IBS$Neutrophils_result[IBS$Neutrophils < 1.6] <- "LOW"
 write.csv(IBS, "data_output/Neutrophils.csv")
 ```
 
-![Neutrophils](../master/fig_output/RplotNeutrophils.png?sanitize=true)
+
 ##
 ##
