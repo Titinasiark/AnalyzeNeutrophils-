@@ -88,7 +88,7 @@ geom_point(na.rm=TRUE) +
 geom_smooth(method = lm,na.rm=TRUE)
   
 ```
-![Neutrophils_PCT](../master/fig_output/RplotNeutrophils_PCT.png?sanitize=true)
+![Neutrophils_PCT](fig_output/Neutrophils_boxplot.png)
 ##
 
 ##### Box plots
