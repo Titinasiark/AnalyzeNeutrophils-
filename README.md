@@ -109,7 +109,7 @@ dev.copy(png,"fig_output/Neutrophils_boxplot.png")
 dev.off()
 
 ```
-![Neutrophils_PCT](fig_output/Neutrophils_boxplot.png
+![Neutrophils_PCT](fig_output/Neutrophils_boxplot.png)
 ##
 
 ##### Assign "HIGH", "NORMAL", or "LOW" based on clinical range to the Neutrophils_result parameter
