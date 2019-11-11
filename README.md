@@ -14,6 +14,7 @@ Robinson, JM. et al. 2019. Complete blood count with differential: An effective 
 ##### BTEC330 F2019 Project2 Sirak
 ## Install necessary packages
 ```
+install.packages("ggplot2")
 library(ggplot2)
 ```
 ##### Read data
@@ -22,20 +23,20 @@ IBS <- read.csv("data/RobinsonEtAl_Sup1.csv", header = TRUE)
 head(IBS)
 write.csv(IBS, "data_output/Neutrophils.csv")
 ```
-#####  Single Regressions 
-#####  Data obtained from Robinson, et al. 2019 (doi: https://doi.org/10.1101/608208)
-#####  https://statquest.org/2017/10/30/statquest-multiple-regression-in-r/
-#####  http://www.sthda.com/english/articles/40-regression-analysis/167-simple-linear-regression-in-r/
-#####  http://r-statistics.co/Linear-Regression.html
+######  Single Regressions 
+######  Data obtained from Robinson, et al. 2019 (doi: https://doi.org/10.1101/608208)
+######  https://statquest.org/2017/10/30/statquest-multiple-regression-in-r/
+######  http://www.sthda.com/english/articles/40-regression-analysis/167-simple-linear-regression-in-r/
+######  http://r-statistics.co/Linear-Regression.html
 
-###### Single Regression Test, BMI vs. Neutrophils
+##### Single Regression Test, BMI vs. Neutrophils
 ```
 Neutrophils.regression <- lm(BMI ~ Neutrophils, data = IBS)
 summary(Neutrophils.regression)
 ```
 
 ##### Output the results to a file
-##### Data obtained from doi: http://www.cookbook-r.com/Data_input_and_output/Writing_text_and_output_from_analyses_to_a_file/
+###### Data obtained from doi: http://www.cookbook-r.com/Data_input_and_output/Writing_text_and_output_from_analyses_to_a_file/
 ```
 sink('data_output/Neutrophils_regression.txt', append = TRUE)
 print(Neutrophils.regression)
@@ -44,7 +45,7 @@ df<-na.omit(data)
 ```
 
 ##### ANOVA: IBS-subtype vs. Neutrophils
-##### Data obtained from doi: http://www.sthda.com/english/wiki/one-way-anova-test-in-r
+###### Data obtained from doi: http://www.sthda.com/english/wiki/one-way-anova-test-in-r
 ```
 Neutrophils.aov <- aov(Neutrophils ~ IBS.subtype, data = IBS)
 summary(Neutrophils.aov)
@@ -54,7 +55,7 @@ sink()
 ```
 ##### Scatterplots
 ##### Print scatterplot and box plots as .png files into "fig_output" project directory.
-##### Data obtained from doi: http://www.sthda.com/english/wiki/ggsave-save-a-ggplot-r-software-and-data-visualization
+###### Data obtained from doi: http://www.sthda.com/english/wiki/ggsave-save-a-ggplot-r-software-and-data-visualization
 https://www.statmethods.net/graphs/scatterplot.html
 
 ```
@@ -75,7 +76,7 @@ Neutrophils_scatterplot <- ggplot(IBS, aes(x = BMI, y = Neutrophils)) +
 ##
 
 ##### Box plots
- ##### Data obtained from doi: https://www.statmethods.net/graphs/boxplot.html
+ ###### Data obtained from doi: https://www.statmethods.net/graphs/boxplot.html
  https://tomizonor.wordpress.com/2013/04/18/color-boxplot/
  ```
 c1 <- rainbow(10)
