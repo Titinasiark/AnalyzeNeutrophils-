@@ -73,7 +73,7 @@ Neutrophils_scatterplot <- ggplot(IBS, aes(x = BMI, y = Neutrophils)) +
 ```
 ![Neutrophils_PCT](../master/fig_output/RplotNeutrophils_PCT.png?sanitize=true)
 ##
-```
+
 ##### Box plots
  https://www.statmethods.net/graphs/boxplot.html
  https://tomizonor.wordpress.com/2013/04/18/color-boxplot/
