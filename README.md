@@ -92,8 +92,8 @@ geom_smooth(method = lm,na.rm=TRUE)
 ##
 
 ##### Box plots
- ###### Data obtained from doi: https://www.statmethods.net/graphs/boxplot.html
- https://tomizonor.wordpress.com/2013/04/18/color-boxplot/
+###### Data obtained from doi: https://www.statmethods.net/graphs/boxplot.html
+##### https://tomizonor.wordpress.com/2013/04/18/color-boxplot/
  ```
 c1 <- rainbow(10)
 
