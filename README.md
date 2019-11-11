@@ -11,7 +11,7 @@ Data (RobinsonEtAl_Sup1.csv) was downloaded from:
 Robinson, JM. et al. 2019. Complete blood count with differential: An effective diagnostic for IBS subtype in the context of BMI? BioRxiv. doi: https://doi.org/10.1101/608208.
 
 ##
-##### BTEC330 F2019 Project2 Sirak
+# Analyze Neutrophils
 ## Install necessary packages
 ```
 install.packages("ggplot2")
