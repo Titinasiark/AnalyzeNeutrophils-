@@ -114,7 +114,6 @@ IBS <- read.csv("data/RobinsonEtAl_Sup1.csv", header = TRUE)
 
 IBS$Neutrophils_result <- "NA"
 
-
 IBS$Neutrophils_result[IBS$Neutrophils > 7.0] <- "HIGH"
 
 IBS$Neutrophils_result[IBS$Neutrophils <= 7.0 & IBS$Neutrophils >= 1.6] <- "NORMAL"
