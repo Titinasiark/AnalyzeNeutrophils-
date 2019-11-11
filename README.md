@@ -7,15 +7,13 @@ WebMD . doi https://www.webmd.com/a-to-z-guides/complete-blood-count#1
 ##### Single regressions, ANOVA test, box-and-whiskers plot and scatterplots for clinical bloodwork 
 
 ([AnalyzeNeutrophils.R](../master/AnalyzeNeutrophils.R)) will allow you to load a comma-delimited .csv with various datapoints, perform single and multiple regressions of Body Mass Index (BMI) vs. Neutrophils and Neutropils_PCT from the Complete Blood Count with Differential (CBC-D) results, and produce 2-D scatterplots, one-way ANOVA with IBS-subtype as Independent Variable (X), and Neutrophils as Dependent Variable (Y). The output includes results of ANOVA test, a formatted box-and-whiskers plot and  and a formatted scattered plot.
- 
 Data (RobinsonEtAl_Sup1.csv) was downloaded from: 
-
 Robinson, JM. et al. 2019. Complete blood count with differential: An effective diagnostic for IBS subtype in the context of BMI? BioRxiv. doi: https://doi.org/10.1101/608208.
 
 ##
 ##### BTEC330 F2019 Project2 Sirak
-```
 ## Install necessary packages
+```
 library(ggplot2)
 ```
 ##### Read data
@@ -25,12 +23,11 @@ head(IBS)
 write.csv(IBS, "data_output/Neutrophils.csv")
 ```
 #####  Single Regressions 
-```
 #####  Data obtained from Robinson, et al. 2019 (doi: https://doi.org/10.1101/608208)
 #####  https://statquest.org/2017/10/30/statquest-multiple-regression-in-r/
 #####  http://www.sthda.com/english/articles/40-regression-analysis/167-simple-linear-regression-in-r/
 #####  http://r-statistics.co/Linear-Regression.html
-```
+
 ###### Single Regression Test, BMI vs. Neutrophils
 ```
 Neutrophils.regression <- lm(BMI ~ Neutrophils, data = IBS)
