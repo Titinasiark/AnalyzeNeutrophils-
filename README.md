@@ -217,7 +217,7 @@ geom_point(na.rm=TRUE) +
 geom_smooth(method = lm,na.rm=TRUE)
   
 ```
-![Neutrophils_PCT_PCT](fig_output/Neutrophils_PCT_scatterplot.png)
+![Neutrophils_PCT](fig_output/Neutrophils_PCT_scatterplot.png)
 ##
 
 ##### Box plots
@@ -238,7 +238,7 @@ dev.copy(png,"fig_output/Neutrophils_PCT_boxplot.png")
 dev.off()
 
 ```
-![Neutrophils_PCT_PCT](fig_output/Neutrophils_PCT_boxplot.png)
+![Neutrophils_PCT](fig_output/Neutrophils_PCT_boxplot.png)
 ##
 
 ##### Assign "HIGH", "NORMAL", or "LOW" based on clinical range to the Neutrophils_PCT_result parameter
