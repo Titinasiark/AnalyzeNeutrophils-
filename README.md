@@ -2,7 +2,7 @@
 ### <p align = "center"> BTEC 330 Project-2 BY Titina Sirak
 
 Neutrophils help to fight infections. If you have high Neutrophil levels, it tells your doctor you have inflammation or infection somewhere in your body. If it’s low, you could be at risk for infection. The normal range is 1.6 to 7.0 cells per 1000 mm^3 of blood.
-WebMD . doi https://www.webmd.com/a-to-z-guides/complete-blood-count#1
+Data obtained from WebMD . (doi https://www.webmd.com/a-to-z-guides/complete-blood-count#1)
 
 ##### Single regressions, ANOVA test, box-and-whiskers plot and scatterplots for clinical bloodwork 
 
@@ -35,7 +35,7 @@ summary(Neutrophils.regression)
 ```
 
 ##### Output the results to a file
-##### http://www.cookbook-r.com/Data_input_and_output/Writing_text_and_output_from_analyses_to_a_file/
+##### Data obtained from doi: http://www.cookbook-r.com/Data_input_and_output/Writing_text_and_output_from_analyses_to_a_file/
 ```
 sink('data_output/Neutrophils_regression.txt', append = TRUE)
 print(Neutrophils.regression)
@@ -44,7 +44,7 @@ df<-na.omit(data)
 ```
 
 ##### ANOVA: IBS-subtype vs. Neutrophils
-##### http://www.sthda.com/english/wiki/one-way-anova-test-in-r
+##### Data obtained from doi: http://www.sthda.com/english/wiki/one-way-anova-test-in-r
 ```
 Neutrophils.aov <- aov(Neutrophils ~ IBS.subtype, data = IBS)
 summary(Neutrophils.aov)
@@ -54,9 +54,9 @@ sink()
 ```
 ##### Scatterplots
 ##### Print scatterplot and box plots as .png files into "fig_output" project directory.
-##### http://www.sthda.com/english/wiki/ggsave-save-a-ggplot-r-software-and-data-visualization
-
+##### Data obtained from doi: http://www.sthda.com/english/wiki/ggsave-save-a-ggplot-r-software-and-data-visualization
 https://www.statmethods.net/graphs/scatterplot.html
+
 ```
 ggplot(IBS, aes(x = BMI, y = Neutrophils)) +
   geom_point(na.rm=TRUE) +    
@@ -75,7 +75,7 @@ Neutrophils_scatterplot <- ggplot(IBS, aes(x = BMI, y = Neutrophils)) +
 ##
 
 ##### Box plots
- https://www.statmethods.net/graphs/boxplot.html
+ ##### Data obtained from doi: https://www.statmethods.net/graphs/boxplot.html
  https://tomizonor.wordpress.com/2013/04/18/color-boxplot/
  ```
 c1 <- rainbow(10)
