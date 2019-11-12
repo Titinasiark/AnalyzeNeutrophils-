@@ -9,10 +9,10 @@ Data obtained from WebMD . (doi https://www.webmd.com/a-to-z-guides/complete-blo
 
 ([AnalyzeNeutrophils.R](../master/AnalyzeNeutrophils.R)) will allow you to load a comma-delimited .csv with various datapoints, perform single and multiple regressions of Body Mass Index (BMI) vs. Neutrophils and Neutropils_PCT from the Complete Blood Count with Differential (CBC-D) results, and produce 2-D scatterplots, one-way ANOVA with IBS-subtype as Independent Variable (X), and Neutrophils as Dependent Variable (Y). The output includes results of ANOVA test, a formatted box-and-whiskers plot and  and a formatted scattered plot.
 
-#### NOTE: Before runing the script, make sure to set your working directory by using 'setwd()' command.
-
 Data (RobinsonEtAl_Sup1.csv) was downloaded from: 
 Robinson, JM. et al. 2019. Complete blood count with differential: An effective diagnostic for IBS subtype in the context of BMI? BioRxiv. doi: https://doi.org/10.1101/608208.
+
+#### NOTE: Before runing the script, make sure to set your working directory by using 'setwd()' command.
 
 ##
 # Analyze Neutrophils
