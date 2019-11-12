@@ -217,7 +217,7 @@ geom_point(na.rm=TRUE) +
 geom_smooth(method = lm,na.rm=TRUE)
   
 ```
-![Neutrophils_PCT](fig_output/Neutrophils_PCT_scatterplot.png)
+![Neutrophils_PCT](fig_output/Neutrophil_PCT_scatterplot.png)
 ##
 
 ##### Box plots
