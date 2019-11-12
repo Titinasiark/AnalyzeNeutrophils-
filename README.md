@@ -12,7 +12,7 @@ Data obtained from WebMD . (doi https://www.webmd.com/a-to-z-guides/complete-blo
 Data (RobinsonEtAl_Sup1.csv) was downloaded from: 
 Robinson, JM. et al. 2019. Complete blood count with differential: An effective diagnostic for IBS subtype in the context of BMI? BioRxiv. doi: https://doi.org/10.1101/608208.
 
-#### NOTE: Before runing the script, make sure to set your working directory by using 'setwd()' command.
+#### NOTE: Before runing the R script, make sure to set your working directory by using 'setwd()' command.
 
 ##
 # Analyze Neutrophils
