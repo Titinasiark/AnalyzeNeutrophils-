@@ -2,7 +2,6 @@
 
 ## Install necessary packages
 library(ggplot2)
-setwd("C:/Users/tihet/Downloads/AnalyzeBloodwork-master (1)/AnalyzeBloodwork-master")
 ## Read data
 IBS <- read.csv("data/RobinsonEtAl_Sup1.csv", header = TRUE)
 head(IBS)
@@ -85,7 +84,6 @@ write.csv(IBS, "data_output/Neutrophils.csv")
 
 ## Install necessary packages
 library(ggplot2)
-setwd("C:/Users/tihet/Downloads/AnalyzeBloodwork-master (1)/AnalyzeBloodwork-master")
 ## Read data
 IBS <- read.csv("data/RobinsonEtAl_Sup1.csv", header = TRUE)
 head(IBS)
