@@ -1,0 +1,16 @@
+
+Call:
+lm(formula = BMI ~ Neutrophil_PCT, data = IBS)
+
+Coefficients:
+   (Intercept)  Neutrophil_PCT  
+      27.97104        -0.02072  
+
+
+Call:
+lm(formula = BMI ~ Neutrophil_PCT, data = IBS)
+
+Coefficients:
+   (Intercept)  Neutrophil_PCT  
+      27.97104        -0.02072  
+

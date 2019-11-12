@@ -1,0 +1,22 @@
+Call:
+   aov(formula = Neutrophil_PCT ~ IBS.subtype, data = IBS)
+
+Terms:
+                IBS.subtype Residuals
+Sum of Squares      254.157 10023.440
+Deg. of Freedom           1       108
+
+Residual standard error: 9.633776
+Estimated effects may be unbalanced
+1 observation deleted due to missingness
+Call:
+   aov(formula = Neutrophil_PCT ~ IBS.subtype, data = IBS)
+
+Terms:
+                IBS.subtype Residuals
+Sum of Squares      254.157 10023.440
+Deg. of Freedom           1       108
+
+Residual standard error: 9.633776
+Estimated effects may be unbalanced
+1 observation deleted due to missingness
