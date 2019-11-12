@@ -133,13 +133,6 @@ write.csv(IBS, "data_output/Neutrophils.csv")
 ##
 
 
-
-##### Single regressions, ANOVA test, box-and-whiskers plot and scatterplots for clinical bloodwork 
-
-([AnalyzeNeutrophils_PCT.R](../master/AnalyzeNeutrophils_PCT.R)) will allow you to load a comma-delimited .csv with various datapoints, perform single and multiple regressions of Body Mass Index (BMI) vs. Neutrophils_PCT and Neutropils_PCT from the Complete Blood Count with Differential (CBC-D) results, and produce 2-D scatterplots, one-way ANOVA with IBS-subtype as Independent Variable (X), and Neutrophils_PCT as Dependent Variable (Y). The output includes results of ANOVA test, a formatted box-and-whiskers plot and  and a formatted scattered plot.
-Data (RobinsonEtAl_Sup1.csv) was downloaded from: 
-Robinson, JM. et al. 2019. Complete blood count with differential: An effective diagnostic for IBS subtype in the context of BMI? BioRxiv. doi: https://doi.org/10.1101/608208.
-
 ##
 # Analyze Neutrophils_PCT
 ##### Install necessary packages
