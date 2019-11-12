@@ -1,7 +1,7 @@
 # <p align = "center">  Analyze Neutrophils and Analyze Neutrophils_PCT
 ### <p align = "center"> BTEC 330 Project-2 BY Titina Sirak
 
-Neutrophils help to fight infections. If you have high Neutrophil levels, it tells your doctor you have inflammation or infection somewhere in your body. If it’s low, you could be at risk for infection. The normal range is 1.6 to 7.0 cells per 1000 mm^3 of blood.
+Neutrophils help to fight infections. If you have high Neutrophil levels, it tells your doctor you have inflammation or infection somewhere in your body. If it’s low, you could be at risk for infection. The normal range for Neutrophils is 1.6 to 7.0 cells per 1000 mm^3 of blood while, for Neutrophils_PCT is 34-71% per 1000 mm^3 of blood .
 Data obtained from WebMD . (doi https://www.webmd.com/a-to-z-guides/complete-blood-count#1)
 
 ##### Single regressions, ANOVA test, box-and-whiskers plot and scatterplots for clinical bloodwork 
