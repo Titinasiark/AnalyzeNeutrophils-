@@ -38,7 +38,6 @@ write.csv(IBS, "data_output/Neutrophils.csv")
 
 ##### Single Regression Test, BMI vs. Neutrophils
 ```
-
 Neutrophils.regression <- lm(BMI ~ Neutrophils, data = IBS)
 
 summary(Neutrophils.regression)
