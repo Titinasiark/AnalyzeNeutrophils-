@@ -69,7 +69,6 @@ print(Neutrophils.aov)
 sink()
 ```
 ##### Scatterplots
-##### Print scatterplot and box plots as .png files into "fig_output" project directory.
 ###### Data obtained from doi: http://www.sthda.com/english/wiki/ggsave-save-a-ggplot-r-software-and-data-visualization
 https://www.statmethods.net/graphs/scatterplot.html
 
