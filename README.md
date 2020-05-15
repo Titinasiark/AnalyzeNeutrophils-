@@ -265,14 +265,14 @@ write.csv(IBS, "data_output/Neutrophils_PCT.csv")
   ### Discription About the project 
   NeutrophilFinalProject.R project will familiarize you with tasks necessary to produce differential expression results and a corresponding volcano plot. These tasks include transforming data, handling data in R including extracting statistical results, combining rows and columns, writing FOR loops and IFELSE commands, and intermediate features of ggplot2. You will become familiar with interpretation of volcano plots for displaying differential expression results
 
-### Read in the table of fold changes
-
 ##
-## Read in the table of fold changes
+##### Read in the table of fold changes
 FCdata <- read.csv("../data/FCNeutrophil.csv", row.names = 1, header = FALSE)
+##
 
-## Read in the table of expression data
+###### Read in the table of expression data
 IBS <- read.csv("../data/GXdata.csv", header = TRUE)
+##
 
 ## Access only the columns with RNA Expression (subsetting)
 names(IBS)[28:277]
