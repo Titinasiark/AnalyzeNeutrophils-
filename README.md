@@ -258,4 +258,13 @@ write.csv(IBS, "data_output/Neutrophils_PCT.csv")
 # <p align = "center"> BTEC395 PROJECT
 # <p align = "center"> Data Transformation and Volcano Plots
   
+  #### NOTE: Before runing the R script, make sure to set your working directory by using 'setwd()' command.
+  
+  ###### Data obtained from  Robinson, et al. 2019, BioStars, R-Bloggers, Data Analytics, StatMethods, YouTube, Science Matters.
+  
+  ### Discription About the project 
+  NeutrophilFinalProject.R project will familiarize you with tasks necessary to produce differential expression results and a corresponding volcano plot. These tasks include transforming data, handling data in R including extracting statistical results, combining rows and columns, writing FOR loops and IFELSE commands, and intermediate features of ggplot2. You will become familiar with interpretation of volcano plots for displaying differential expression results
+  
+  
+  
 
