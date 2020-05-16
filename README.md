@@ -339,6 +339,7 @@ dev.off()
 
 <p align="center">
    <img width= "500" height="500" src="../master/fig_output/NeutrophilPCTplot.png">
+   </p>
 ```   
 
 
