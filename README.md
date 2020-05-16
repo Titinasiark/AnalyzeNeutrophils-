@@ -334,7 +334,12 @@ print(NeutrophilPCTplot + ggtitle("Gene Expression vs. NeutrophilPCT Level"))
 dev.off()
 ```
 ##
-##
+```
+### <p align = "center"> Volcano Plot </p>
+
+<p align="center">
+   <img width= "500" height= "500" scr="../fig_output/NeutrophilPCTplot.png">
+
 
 
 ### List of all diffrentially expressed/ significant genes 
