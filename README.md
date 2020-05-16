@@ -334,9 +334,8 @@ print(NeutrophilPCTplot + ggtitle("Gene Expression vs. NeutrophilPCT Level"))
 dev.off()
 ```
 ##
-```
+
 ![NeutrophilPCTplot](fig_output/NeutrophilPCTplot.png)
-```   
 
 
 
