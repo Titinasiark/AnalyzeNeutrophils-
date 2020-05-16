@@ -340,7 +340,6 @@ dev.off()
 ### List of all diffrentially expressed/ significant genes 
 
 |***GENE***|***ALIAS***|
-
 |:--:|:-------|
 |**EWSR1**|EWS RNA Binding Protein 1|
 |**Klf7**|Kruppel Like Factor 7|
