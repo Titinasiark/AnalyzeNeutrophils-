@@ -338,7 +338,7 @@ dev.off()
 ### <p align = "center"> Volcano Plot </p>
 
 <p align="center">
-   <img width= "500" height= "500" scr="../fig_output/NeutrophilPCTplot.png">
+   <img width= "500" height= "500" src="../fig_output/NeutrophilPCTplot.png">
 
 
 
