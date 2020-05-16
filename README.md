@@ -342,14 +342,14 @@ dev.off()
 |***GENE***|***ALIAS***|
 
 |:--:|:-------|
-|**EWSR1**|***EWS RNA Binding Protein 1***|
-|**Klf7**|***Kruppel Like Factor 7***|
-|**Cd300lb**|***member b is a protein***|
-|**CD28**||***Cluster of Differentiation 2***|
-|**CD3G**||***T-cell surface glycoprotein CD3 gamma chain***|
-|**EWSR1**|***EWS RNA Binding Protein 1***|
-|**MSR1**||***Macrophage Scavenger Receptor 1***|
-|**TLR4**|***Toll-like receptor 4***|
+|**EWSR1**|EWS RNA Binding Protein 1|
+|**Klf7**|Kruppel Like Factor 7|
+|**Cd300lb**|member b is a protein|
+|**CD28**|Cluster of Differentiation 2|
+|**CD3G**|T-cell surface glycoprotein CD3 gamma chain|
+|**EWSR1**|EWS RNA Binding Protein 1|
+|**MSR1**|Macrophage Scavenger Receptor 1|
+|**TLR4**|Toll-like receptor 4|
 
   
   
