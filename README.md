@@ -337,6 +337,19 @@ dev.off()
 ##
 
 
+### List of all diffrentially expressed/ significant genes 
+
+|***GENE***|
+|**EWSR1**|
+|**Klf7**|
+|**Cd300lb**|
+|**CD28**|
+|**CD3G**|
+|**EWSR1**|
+|**MSR1**|
+|**TLR4**|
+|:--:|:-------|
+
   
   
 
